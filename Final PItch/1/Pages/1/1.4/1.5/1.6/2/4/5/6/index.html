@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Parallax Tutorial</title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+	<header>
+		<a href="#" class="logo">[Ayanfe]:)</a>
+		<ul>
+			<li><a href="./7/index.html" class="active">Next</a></li>
+			<li><a href="#">Home</a></li>
+			<li><a href="#">About</a></li>
+			<li><a href="#">Contact</a></li>
+	</header>
+	<section>
+		<img src="./Images/stars.png" id="stars">
+		<img src="./Images/moonlight.png" id="moonlight">
+	    <img src="./Images/moon.png" id="moon">
+		<img src="./Images/mountains_behind.png" id="mountains_behind">
+		<h2 id="text">Moon Light</h2>
+		<img src="./Images/mountains_front.png" id="mountains_front">
+	</section>
+	<div class="sec">
+		<h2>Example #2</h2>
+			<div class="Scroll">Scroll Function (Parallax Animation)</div>
+		<p>Lorem ipsum dolor sit amet. A quas deserunt et libero laudantium non distinctio omnis. Eos placeat unde qui voluptatem obcaecati est placeat officiis nam dolorem totam? Aut iste eveniet non iusto veniam et aliquam illo vel tempora natus. <br><br>Eum explicabo aliquam ut omnis molestias est omnis consequuntur. Cum optio consequatur ut reprehenderit quia ut nulla odit  sint fugit. Aut quod recusandae qui quod omnis et possimus aliquid et fuga delectus eos minima doloremque 33 minus illum a dolores dolorem. <br><br>Eum voluptatem quisquam aut optio corporis ut tempora eaque aut repellat distinctio et tenetur sint. Est nisi voluptatem nam error nisi eos dolore eaque in eius tenetur non consequatur officia eum possimus officia. Non vero animi qui quia veniam et amet alias et consequatur nesciunt. <br><br> Lorem ipsum dolor sit amet. A quas deserunt et libero laudantium non distinctio omnis. Eos placeat unde qui voluptatem obcaecati est placeat officiis nam dolorem totam? Aut iste eveniet non iusto veniam et aliquam illo vel tempora natus. <br><br> Eum explicabo aliquam ut omnis molestias est omnis consequuntur. Cum optio consequatur ut reprehenderit quia ut nulla odit  sint fugit. Aut quod recusandae qui quod omnis et possimus aliquid et fuga delectus eos minima doloremque 33 minus illum a dolores dolorem. <br><br>Eum voluptatem quisquam aut optio corporis ut tempora eaque aut repellat distinctio et tenetur sint. Est nisi voluptatem nam error nisi eos dolore eaque in eius tenetur non consequatur officia eum possimus officia. Non vero animi qui quia veniam et amet alias et consequatur nesciunt. <br><br>Lorem ipsum dolor sit amet. A quas deserunt et libero laudantium non distinctio omnis. Eos placeat unde qui voluptatem obcaecati est placeat officiis nam dolorem totam? Aut iste eveniet non iusto veniam et aliquam illo vel tempora natus.</p>
+	</div>
+
+	<script>
+		let stars = document.getElementById('stars');
+		let moon = document.getElementById('moon');
+		let moonlight = document.getElementById('moonlight');
+		let mountains_behind = document.getElementById('mountains_behind');
+		let text = document.getElementById('text');
+		let mountains_front = document.getElementById('mountains_front');
+
+		window.addEventListener('scroll', function (){
+			let value = window.scrollY;
+			stars.style.left = value * 0.25 + 'px'; 
+			moon.style.top = value * 1.05 + 'px';
+			moonlight.style.top = value * 1.05 + 'px';
+			mountains_behind.style.top = value * 0.25 + 'px';
+			mountains_front.style.top = value * 0 + 'px';
+			text.style.marginRight = value * 4 + 'px';
+		})
+	</script>
+
+</body>
+</html>

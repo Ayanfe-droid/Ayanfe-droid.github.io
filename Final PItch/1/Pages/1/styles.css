@@ -1,0 +1,229 @@
+body {
+	background-color: black;
+   height: 100vh;
+   width: 100vh;
+}
+
+.text1 {
+   color: white;
+   font-family: "Poppins", sans-serif;
+   font-size: 18px;
+   letter-spacing: 1px;
+   text-transform: uppercase;
+   white-space: nowrap;
+   position: absolute;
+   top: 130px;
+   left: 370px;
+}
+
+.maincontainer{
+	position: relative;
+	width: 368px;
+	height: 574px;
+	top: 210px;
+   left: 525px;
+
+}
+
+ .thecard{
+ 	position: absolute;
+ 	width: 100%;
+ 	height: 100%;
+ 	transform-style: preserve-3d;
+ 	transition: all 0.5s ease;
+ }
+
+ .thecard:hover{
+ 	transform: rotateY(180deg);
+
+ }
+
+ .thefront{
+ 	position: absolute;
+ 	width: 100%;
+ 	height: 100%;
+ 	backface-visibility: hidden;
+ 	background: url(./Images/Front.jpg);
+    background-size: 100%;
+ 	color: #333;
+ 	text-align: center;
+ 	border-radius: 20px;
+ 	font-size: 18px;
+ 	font-weight: bold;
+
+
+ }
+
+ .theback{
+ 	position: absolute;
+ 	width: 100%;
+ 	height: 100%;
+ 	backface-visibility: hidden;
+ 	background: url(./Images/2.jpg);
+    background-size: 100%;
+ 	color: #fff;
+ 	text-align: center;
+ 	border-radius: 20px;
+ 	font-size: 18px;
+ 	font-weight: bold;
+ 	transform: rotateY(180deg);
+
+ }
+
+ .maincontainer2{
+	position: relative;
+	width: 368px;
+	height: 574px;
+	top: -365px;
+	left: 50px;
+
+}
+
+ .thecard2{
+ 	position: absolute;
+ 	width: 100%;
+ 	height: 100%;
+ 	transform-style: preserve-3d;
+ 	transition: all 0.5s ease;
+ }
+
+ .thecard2:hover{
+ 	transform: rotateY(180deg);
+
+ }
+
+ .thefront2{
+ 	position: absolute;
+ 	width: 100%;
+ 	height: 100%;
+ 	backface-visibility: hidden;
+    background: url(./Images/Front.jpg);
+    background-size: 100%;
+ 	color: #333;
+ 	text-align: center;
+ 	border-radius: 20px;
+ 	font-size: 18px;
+ 	font-weight: bold;
+
+
+ }
+
+ .theback2{
+ 	position: absolute;
+ 	width: 100%;
+ 	height: 100%;
+ 	backface-visibility: hidden;
+ 	background: url(./Images/1.jpg);
+    background-size: 100%;
+ 	color: #fff;
+ 	text-align: center;
+ 	border-radius: 20px;
+ 	font-size: 18px;
+ 	font-weight: bold;
+ 	transform: rotateY(180deg);
+
+ }
+
+  .maincontainer3{
+    position: relative;
+    width: 368px;
+    height: 574px;
+    top: -940px;
+    left: 990px;
+
+}
+
+ .thecard3{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: all 0.5s ease;
+ }
+
+ .thecard3:hover{
+    transform: rotateY(180deg);
+
+ }
+
+ .thefront3{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    background: url(./Images/Front.jpg);
+    background-size: 100%;
+    color: #333;
+    text-align: center;
+    border-radius: 20px;
+    font-size: 18px;
+    font-weight: bold;
+
+
+ }
+
+ .theback3{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    background: url(./Images/3.gif);
+    background-size: 100%;
+    color: #fff;
+    text-align: center;
+    border-radius: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    transform: rotateY(180deg);
+
+ }
+ header {
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100vh;
+   padding: 30px 100px;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   font-family: Poppins, sans-serif;
+   z-index: 10000;
+}
+
+header .logo {
+   color: #fff;
+   font-weight: 700;
+   text-decoration: none;
+   font-size: 25px;
+   text-transform: uppercase;
+   letter-spacing: 5px;
+
+}
+
+header ul{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   position: absolute;
+   left: 950px;
+
+}
+
+header ul li {
+   list-style: none;
+   margin-left: 20px;
+}
+
+header ul li a {
+     text-decoration: none;
+     padding: 6px 15px;
+     color: #fff;
+     border-radius: 20px;
+
+}
+
+header ul li a:hover,
+header ul li a.active {
+   background: #fff;
+   color: #2b1055;
+}
