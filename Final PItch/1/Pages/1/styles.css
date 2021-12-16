@@ -1,19 +1,27 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
 body {
 	background-color: black;
+   margin: 0;
+   padding: 0;
    height: 100vh;
    width: 100vh;
+
 }
 
 .text1 {
    color: white;
    font-family: "Poppins", sans-serif;
-   font-size: 18px;
-   letter-spacing: 1px;
+   font-size: 1.125rem;
+   letter-spacing: 0.063rem;
    text-transform: uppercase;
    white-space: nowrap;
    position: absolute;
-   top: 130px;
-   left: 370px;
+   top: 8.125rem;
+   left: 23.125rem;
 }
 
 .maincontainer{
@@ -177,53 +185,52 @@ body {
     transform: rotateY(180deg);
 
  }
- header {
-   position: absolute;
-   top: 0;
-   left: 0;
-   width: 100vh;
-   padding: 30px 100px;
-   display: flex;
-   justify-content: space-between;
-   align-items: center;
-   font-family: Poppins, sans-serif;
-   z-index: 10000;
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1.875rem 6.25rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: Poppins, sans-serif;
+    z-index: 10000;
 }
 
 header .logo {
-   color: #fff;
-   font-weight: 700;
-   text-decoration: none;
-   font-size: 25px;
-   text-transform: uppercase;
-   letter-spacing: 5px;
+    color: #fff;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 1.563rem;
+    text-transform: uppercase;
+    letter-spacing: 0.313rem;
 
 }
 
 header ul{
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   position: absolute;
-   left: 950px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
 }
 
 header ul li {
-   list-style: none;
-   margin-left: 20px;
+    list-style: none;
+    margin-left: 1.25rem;
 }
 
 header ul li a {
      text-decoration: none;
-     padding: 6px 15px;
+     padding: 0.375rem 0.938rem;
      color: #fff;
-     border-radius: 20px;
+     border-radius: 1.25rem;
 
 }
 
 header ul li a:hover,
 header ul li a.active {
-   background: #fff;
-   color: #2b1055;
+    background: #fff;
+    color: #2b1055;
 }
+
